@@ -1,0 +1,14 @@
+platform :ios, "7.0"
+
+pod 'Masonry', '~> 0.6.4'
+#pod 'SVProgressHUD',:git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
+pod 'SVProgressHUD', '~> 2.0.3'
+pod 'Reachability', '~> 3.1.1'
+pod 'CocoaLumberjack', '~> 2.0.0-rc2'
+
+#加载更新命令
+#pod install --verbose --no-repo-update
+#pod update NIMSDK --verbose --no-repo-update
+#Desktop/iOS/trunk/HealthRecord
+#Desktop/iOS/branches/RB-1.0/HealthRecord
+#Desktop/iOS/branches/RB-1.1

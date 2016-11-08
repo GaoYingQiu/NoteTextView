@@ -1,0 +1,21 @@
+//
+//  jojoTextView.pch
+//  jojoIM
+//
+//  Created by jojo on 16/11/7.
+//  Copyright © 2016年 jojo. All rights reserved.
+//
+
+#ifndef jojoTextView_pch
+#define jojoTextView_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Config.h"
+#import "Style.h"
+#import "UIColor+Extension.h"
+#import "Masonry.h"
+
+
+#endif /* jojoTextView_pch */
