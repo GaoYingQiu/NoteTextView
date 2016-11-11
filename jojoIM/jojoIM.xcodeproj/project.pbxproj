@@ -22,6 +22,10 @@
 		EB15C36E1DD09F0300550489 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15C36D1DD09F0300550489 /* UIColor+Extension.m */; };
 		EB15C3711DD0A51800550489 /* ToolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15C3701DD0A51800550489 /* ToolUtil.m */; };
 		EB15C3741DD0A57300550489 /* UIImage+NTESColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15C3731DD0A57300550489 /* UIImage+NTESColor.m */; };
+		EB52DED01DD418A500400F3C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DECF1DD418A500400F3C /* MapViewController.m */; };
+		EB52DED31DD41A8D00400F3C /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DED21DD41A8D00400F3C /* CustomAnnotationView.m */; };
+		EB52DED61DD41BAA00400F3C /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DED51DD41BAA00400F3C /* CustomCalloutView.m */; };
+		EB52DEDA1DD4365D00400F3C /* CustomerMApointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DED91DD4365D00400F3C /* CustomerMApointAnnotation.m */; };
 		EBED06871DD1618000705FFE /* JJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED06861DD1618000705FFE /* JJBaseViewController.m */; };
 		EBED068E1DD1717000705FFE /* UIActionSheet+NTESBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED068D1DD1717000705FFE /* UIActionSheet+NTESBlock.m */; };
 		EBED06911DD17A8E00705FFE /* UIImage+RRAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED06901DD17A8E00705FFE /* UIImage+RRAPI.m */; };
@@ -79,6 +83,15 @@
 		EB15C3701DD0A51800550489 /* ToolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolUtil.m; sourceTree = "<group>"; };
 		EB15C3721DD0A57300550489 /* UIImage+NTESColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NTESColor.h"; sourceTree = "<group>"; };
 		EB15C3731DD0A57300550489 /* UIImage+NTESColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NTESColor.m"; sourceTree = "<group>"; };
+		EB52DECD1DD40E6000400F3C /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		EB52DECE1DD418A500400F3C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		EB52DECF1DD418A500400F3C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		EB52DED11DD41A8D00400F3C /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		EB52DED21DD41A8D00400F3C /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		EB52DED41DD41BAA00400F3C /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		EB52DED51DD41BAA00400F3C /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		EB52DED81DD4365D00400F3C /* CustomerMApointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerMApointAnnotation.h; sourceTree = "<group>"; };
+		EB52DED91DD4365D00400F3C /* CustomerMApointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerMApointAnnotation.m; sourceTree = "<group>"; };
 		EBED06851DD1618000705FFE /* JJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBaseViewController.h; sourceTree = "<group>"; };
 		EBED06861DD1618000705FFE /* JJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBaseViewController.m; sourceTree = "<group>"; };
 		EBED06881DD1619500705FFE /* Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Style.h; sourceTree = "<group>"; };
@@ -150,6 +163,7 @@
 		EB15C31E1DD0794A00550489 /* jojoIM */ = {
 			isa = PBXGroup;
 			children = (
+				EB52DED71DD4363400400F3C /* model */,
 				EB15C3681DD09EB700550489 /* util */,
 				EB15C3651DD0972000550489 /* config */,
 				EB15C35C1DD0967D00550489 /* View */,
@@ -161,6 +175,8 @@
 				EB15C3261DD0794A00550489 /* ViewController.m */,
 				EBED06851DD1618000705FFE /* JJBaseViewController.h */,
 				EBED06861DD1618000705FFE /* JJBaseViewController.m */,
+				EB52DECE1DD418A500400F3C /* MapViewController.h */,
+				EB52DECF1DD418A500400F3C /* MapViewController.m */,
 				EB15C3521DD079A100550489 /* Launch Screen.storyboard */,
 				EB15C32B1DD0794B00550489 /* Assets.xcassets */,
 				EB15C3301DD0794B00550489 /* Info.plist */,
@@ -199,6 +215,10 @@
 		EB15C35C1DD0967D00550489 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB52DED41DD41BAA00400F3C /* CustomCalloutView.h */,
+				EB52DED51DD41BAA00400F3C /* CustomCalloutView.m */,
+				EB52DED11DD41A8D00400F3C /* CustomAnnotationView.h */,
+				EB52DED21DD41A8D00400F3C /* CustomAnnotationView.m */,
 				EB15C3621DD096AB00550489 /* NoteTextViewCell.h */,
 				EB15C3631DD096AB00550489 /* NoteTextViewCell.m */,
 				EB15C35D1DD0968A00550489 /* NoteTextFieldDelegate.m */,
@@ -211,6 +231,7 @@
 		EB15C3651DD0972000550489 /* config */ = {
 			isa = PBXGroup;
 			children = (
+				EB52DECD1DD40E6000400F3C /* APIKey.h */,
 				EBED06881DD1619500705FFE /* Style.h */,
 				EB15C3661DD0973200550489 /* Config.h */,
 			);
@@ -233,6 +254,15 @@
 				EBED06901DD17A8E00705FFE /* UIImage+RRAPI.m */,
 			);
 			name = util;
+			sourceTree = "<group>";
+		};
+		EB52DED71DD4363400400F3C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EB52DED81DD4365D00400F3C /* CustomerMApointAnnotation.h */,
+				EB52DED91DD4365D00400F3C /* CustomerMApointAnnotation.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		EBED06A01DD1CB9E00705FFE /* JSONKit */ = {
@@ -440,16 +470,20 @@
 			files = (
 				EB15C3271DD0794A00550489 /* ViewController.m in Sources */,
 				EBED06911DD17A8E00705FFE /* UIImage+RRAPI.m in Sources */,
+				EB52DED31DD41A8D00400F3C /* CustomAnnotationView.m in Sources */,
 				EB15C3241DD0794A00550489 /* AppDelegate.m in Sources */,
 				EBED068E1DD1717000705FFE /* UIActionSheet+NTESBlock.m in Sources */,
 				EB15C3611DD0968A00550489 /* NoteTextFieldCell.m in Sources */,
 				EB15C35B1DD08D1400550489 /* CreateNoteController.m in Sources */,
 				EB15C36E1DD09F0300550489 /* UIColor+Extension.m in Sources */,
+				EB52DED61DD41BAA00400F3C /* CustomCalloutView.m in Sources */,
+				EB52DEDA1DD4365D00400F3C /* CustomerMApointAnnotation.m in Sources */,
 				EBED06871DD1618000705FFE /* JJBaseViewController.m in Sources */,
 				EB15C3711DD0A51800550489 /* ToolUtil.m in Sources */,
 				EB15C3211DD0794A00550489 /* main.m in Sources */,
 				EB15C3741DD0A57300550489 /* UIImage+NTESColor.m in Sources */,
 				EB15C3641DD096AB00550489 /* NoteTextViewCell.m in Sources */,
+				EB52DED01DD418A500400F3C /* MapViewController.m in Sources */,
 				EB15C3601DD0968A00550489 /* NoteTextFieldDelegate.m in Sources */,
 				EBED06A31DD1CB9E00705FFE /* JSONKit.m in Sources */,
 			);
@@ -585,7 +619,7 @@
 				INFOPLIST_FILE = jojoIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.jojoIM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HTHTJiuJiuInternationalSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -600,7 +634,7 @@
 				INFOPLIST_FILE = jojoIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jojo.jojoIM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HTHTJiuJiuInternationalSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
