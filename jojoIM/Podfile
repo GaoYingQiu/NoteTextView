@@ -7,6 +7,9 @@ pod 'Reachability', '~> 3.1.1'
 pod 'CocoaLumberjack', '~> 2.0.0-rc2'
 pod 'AMapLocation','~> 2.1.1'
 pod 'AMap2DMap','~> 4.2.0'
+pod 'AMapSearch','~> 4.2.0'
+pod 'MJRefresh','~> 3.1.12'
+
 
 #加载更新命令
 #pod install --verbose --no-repo-update

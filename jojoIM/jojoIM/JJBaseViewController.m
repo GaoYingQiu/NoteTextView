@@ -17,7 +17,7 @@
     self.view.backgroundColor =  LJBackgroundColor;
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:@"#171717"]];
     self.navigationController.navigationBar.translucent = NO;//设置为不透明
-    self.navigationController.navigationBar.barTintColor= [UIColor colorWithHexString:@"#EDD3BB"];
+    self.navigationController.navigationBar.barTintColor= [UIColor colorWithHexString:@"#F6B527"];
     
 //    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:NaviBar_Title_Font, NSFontAttributeName,NaviBar_Title_FontColor, NSForegroundColorAttributeName,  nil]];
     

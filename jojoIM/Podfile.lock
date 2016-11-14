@@ -4,6 +4,8 @@ PODS:
   - AMapFoundation (1.2.0)
   - AMapLocation (2.1.1):
     - AMapFoundation (~> 1.2)
+  - AMapSearch (4.2.0):
+    - AMapFoundation (~> 1.0)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -13,14 +15,17 @@ PODS:
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
   - Masonry (0.6.4)
+  - MJRefresh (3.1.12)
   - Reachability (3.1.1)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
-  - AMap2DMap
+  - AMap2DMap (~> 4.2.0)
   - AMapLocation (~> 2.1.1)
+  - AMapSearch (~> 4.2.0)
   - CocoaLumberjack (~> 2.0.0-rc2)
   - Masonry (~> 0.6.4)
+  - MJRefresh
   - Reachability (~> 3.1.1)
   - SVProgressHUD (~> 2.0.3)
 
@@ -28,8 +33,10 @@ SPEC CHECKSUMS:
   AMap2DMap: 82228a353bafa585f58c600bf7ee4687072b2e43
   AMapFoundation: 8acc2bf4eed79aab4d21002ddb8b24a6f3f3621c
   AMapLocation: dd203f76b034ef5cb546600f4e1ffad2a3a14072
+  AMapSearch: 788020fca7ed18819e8bc2bfca716a6775a05ada
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 

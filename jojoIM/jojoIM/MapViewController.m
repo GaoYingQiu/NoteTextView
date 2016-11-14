@@ -78,7 +78,7 @@
     addMapAnimationView.frame = CGRectMake(0, 0, 40, 35);
     addMapAnimationView.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     [addMapAnimationView setTitle:@"Add" forState:UIControlStateNormal];
-    [addMapAnimationView setTitleColor:[UIColor colorWithHexString:@"#428253"] forState:UIControlStateNormal];
+    [addMapAnimationView setTitleColor:[UIColor colorWithHexString:@"#171717"] forState:UIControlStateNormal];
     [addMapAnimationView addTarget:self action:@selector(addAction) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * item = [[UIBarButtonItem alloc]initWithCustomView:addMapAnimationView];
     self.navigationItem.rightBarButtonItem = item;
@@ -117,12 +117,6 @@
                 [strongSelf addAnnotationToMapView:strongSelf.pointAnnotaiton];
             }
             
-            
-//            [strongSelf.mapView setZoomLevel:15.1 animated:NO];
-//            [strongSelf.mapView setCenterCoordinate:location.coordinate animated:YES];
-            
-            
-            //
 //            MAPointAnnotation *annotation = [[MAPointAnnotation alloc] init];
 //            [annotation setCoordinate:location.coordinate];
 //            

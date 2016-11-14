@@ -26,6 +26,11 @@
 		EB52DED31DD41A8D00400F3C /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DED21DD41A8D00400F3C /* CustomAnnotationView.m */; };
 		EB52DED61DD41BAA00400F3C /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DED51DD41BAA00400F3C /* CustomCalloutView.m */; };
 		EB52DEDA1DD4365D00400F3C /* CustomerMApointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52DED91DD4365D00400F3C /* CustomerMApointAnnotation.m */; };
+		EBB116361DD9584A00D0AC86 /* MapPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB116351DD9584A00D0AC86 /* MapPositionController.m */; };
+		EBB1163B1DD9586A00D0AC86 /* WeJuBarPoi.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB116381DD9586A00D0AC86 /* WeJuBarPoi.m */; };
+		EBB1163C1DD9586A00D0AC86 /* WJPOIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB1163A1DD9586A00D0AC86 /* WJPOIAnnotation.m */; };
+		EBB116411DD958CE00D0AC86 /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB1163E1DD958CE00D0AC86 /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EBB116421DD958CE00D0AC86 /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB116401DD958CE00D0AC86 /* PRTweenTimingFunctions.m */; };
 		EBED06871DD1618000705FFE /* JJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED06861DD1618000705FFE /* JJBaseViewController.m */; };
 		EBED068E1DD1717000705FFE /* UIActionSheet+NTESBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED068D1DD1717000705FFE /* UIActionSheet+NTESBlock.m */; };
 		EBED06911DD17A8E00705FFE /* UIImage+RRAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED06901DD17A8E00705FFE /* UIImage+RRAPI.m */; };
@@ -92,6 +97,16 @@
 		EB52DED51DD41BAA00400F3C /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
 		EB52DED81DD4365D00400F3C /* CustomerMApointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerMApointAnnotation.h; sourceTree = "<group>"; };
 		EB52DED91DD4365D00400F3C /* CustomerMApointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerMApointAnnotation.m; sourceTree = "<group>"; };
+		EBB116341DD9584A00D0AC86 /* MapPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPositionController.h; sourceTree = "<group>"; };
+		EBB116351DD9584A00D0AC86 /* MapPositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPositionController.m; sourceTree = "<group>"; };
+		EBB116371DD9586A00D0AC86 /* WeJuBarPoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeJuBarPoi.h; sourceTree = "<group>"; };
+		EBB116381DD9586A00D0AC86 /* WeJuBarPoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeJuBarPoi.m; sourceTree = "<group>"; };
+		EBB116391DD9586A00D0AC86 /* WJPOIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJPOIAnnotation.h; sourceTree = "<group>"; };
+		EBB1163A1DD9586A00D0AC86 /* WJPOIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJPOIAnnotation.m; sourceTree = "<group>"; };
+		EBB1163D1DD958CE00D0AC86 /* PRTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTween.h; sourceTree = "<group>"; };
+		EBB1163E1DD958CE00D0AC86 /* PRTween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTween.m; sourceTree = "<group>"; };
+		EBB1163F1DD958CE00D0AC86 /* PRTweenTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTweenTimingFunctions.h; sourceTree = "<group>"; };
+		EBB116401DD958CE00D0AC86 /* PRTweenTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTweenTimingFunctions.m; sourceTree = "<group>"; };
 		EBED06851DD1618000705FFE /* JJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBaseViewController.h; sourceTree = "<group>"; };
 		EBED06861DD1618000705FFE /* JJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBaseViewController.m; sourceTree = "<group>"; };
 		EBED06881DD1619500705FFE /* Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Style.h; sourceTree = "<group>"; };
@@ -175,6 +190,8 @@
 				EB15C3261DD0794A00550489 /* ViewController.m */,
 				EBED06851DD1618000705FFE /* JJBaseViewController.h */,
 				EBED06861DD1618000705FFE /* JJBaseViewController.m */,
+				EBB116341DD9584A00D0AC86 /* MapPositionController.h */,
+				EBB116351DD9584A00D0AC86 /* MapPositionController.m */,
 				EB52DECE1DD418A500400F3C /* MapViewController.h */,
 				EB52DECF1DD418A500400F3C /* MapViewController.m */,
 				EB15C3521DD079A100550489 /* Launch Screen.storyboard */,
@@ -215,6 +232,10 @@
 		EB15C35C1DD0967D00550489 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EBB1163D1DD958CE00D0AC86 /* PRTween.h */,
+				EBB1163E1DD958CE00D0AC86 /* PRTween.m */,
+				EBB1163F1DD958CE00D0AC86 /* PRTweenTimingFunctions.h */,
+				EBB116401DD958CE00D0AC86 /* PRTweenTimingFunctions.m */,
 				EB52DED41DD41BAA00400F3C /* CustomCalloutView.h */,
 				EB52DED51DD41BAA00400F3C /* CustomCalloutView.m */,
 				EB52DED11DD41A8D00400F3C /* CustomAnnotationView.h */,
@@ -259,6 +280,10 @@
 		EB52DED71DD4363400400F3C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				EBB116371DD9586A00D0AC86 /* WeJuBarPoi.h */,
+				EBB116381DD9586A00D0AC86 /* WeJuBarPoi.m */,
+				EBB116391DD9586A00D0AC86 /* WJPOIAnnotation.h */,
+				EBB1163A1DD9586A00D0AC86 /* WJPOIAnnotation.m */,
 				EB52DED81DD4365D00400F3C /* CustomerMApointAnnotation.h */,
 				EB52DED91DD4365D00400F3C /* CustomerMApointAnnotation.m */,
 			);
@@ -471,12 +496,16 @@
 				EB15C3271DD0794A00550489 /* ViewController.m in Sources */,
 				EBED06911DD17A8E00705FFE /* UIImage+RRAPI.m in Sources */,
 				EB52DED31DD41A8D00400F3C /* CustomAnnotationView.m in Sources */,
+				EBB116411DD958CE00D0AC86 /* PRTween.m in Sources */,
+				EBB1163C1DD9586A00D0AC86 /* WJPOIAnnotation.m in Sources */,
 				EB15C3241DD0794A00550489 /* AppDelegate.m in Sources */,
 				EBED068E1DD1717000705FFE /* UIActionSheet+NTESBlock.m in Sources */,
 				EB15C3611DD0968A00550489 /* NoteTextFieldCell.m in Sources */,
 				EB15C35B1DD08D1400550489 /* CreateNoteController.m in Sources */,
+				EBB1163B1DD9586A00D0AC86 /* WeJuBarPoi.m in Sources */,
 				EB15C36E1DD09F0300550489 /* UIColor+Extension.m in Sources */,
 				EB52DED61DD41BAA00400F3C /* CustomCalloutView.m in Sources */,
+				EBB116421DD958CE00D0AC86 /* PRTweenTimingFunctions.m in Sources */,
 				EB52DEDA1DD4365D00400F3C /* CustomerMApointAnnotation.m in Sources */,
 				EBED06871DD1618000705FFE /* JJBaseViewController.m in Sources */,
 				EB15C3711DD0A51800550489 /* ToolUtil.m in Sources */,
@@ -486,6 +515,7 @@
 				EB52DED01DD418A500400F3C /* MapViewController.m in Sources */,
 				EB15C3601DD0968A00550489 /* NoteTextFieldDelegate.m in Sources */,
 				EBED06A31DD1CB9E00705FFE /* JSONKit.m in Sources */,
+				EBB116361DD9584A00D0AC86 /* MapPositionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

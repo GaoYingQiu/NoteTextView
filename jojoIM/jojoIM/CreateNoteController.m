@@ -109,7 +109,7 @@ NoteTextViewCellDelegate> {
     self.itemBtn.frame = CGRectMake(0, 0, 40, 35);
     self.itemBtn.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     [self.itemBtn setTitle:@"Save" forState:UIControlStateNormal];
-    [self.itemBtn setTitleColor:[UIColor colorWithHexString:@"#428253"] forState:UIControlStateNormal];
+    [self.itemBtn setTitleColor:[UIColor colorWithHexString:@"#171717"] forState:UIControlStateNormal];
     [self.itemBtn addTarget:self action:@selector(clickRightActionButton) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * item = [[UIBarButtonItem alloc]initWithCustomView:self.itemBtn];
     self.navigationItem.rightBarButtonItem = item;
