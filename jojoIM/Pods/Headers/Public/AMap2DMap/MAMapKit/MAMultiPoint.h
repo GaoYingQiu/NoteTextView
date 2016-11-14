@@ -1,1 +1,0 @@
-../../../../AMap2DMap/MAMapKit.framework/Headers/MAMultiPoint.h
