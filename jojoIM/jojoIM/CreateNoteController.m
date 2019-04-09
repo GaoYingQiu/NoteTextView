@@ -349,15 +349,15 @@ NoteTextViewCellDelegate> {
     
     //如果当前输入的框的位置低于键盘的高度就移动视图
     if ([self.textView isFirstResponder] &&  textfieldMaxY > (keyboardFrame.origin.y - 50)){
-     
+        [self.tableView setContentOffset:CGPointZero animated:NO];
         CGFloat textViewHeight  = bTextHeightMoreCellHeight ? (self.textView.frame.size.height + 51 + 50): self.tableView.frame.size.height; //textView 以及textField的总高度
         CGFloat contentSizeHeight = textViewHeight + (keyboardFrame.size.height + 50)  + 64; //再加上键盘 和工具条的高度
         self.tableView.contentSize = CGSizeMake(self.tableView.contentSize.width, contentSizeHeight);
-        
+
 
         //被点击的文本框的底部的Y值 - 键盘的顶端的Y值 + 工具条的高度  =  要偏移的移动的距离
         CGFloat offSet = 50 + 64 + (textfieldMaxY - keyboardFrame.origin.y) + self.tableView.contentOffset.y;
-        
+        NSLog(@"弹出键盘%.0lf",offSet);
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:_keyboardAnimationDuration];
         [UIView setAnimationCurve:_keyboardAnimationCurve];
@@ -369,15 +369,18 @@ NoteTextViewCellDelegate> {
     
     
     /* Move the toolbar to above the keyboard */
+    if([self.textView isFirstResponder]){
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:_keyboardAnimationDuration];
         [UIView setAnimationCurve:_keyboardAnimationCurve];
         [self autoMovekeyBoard:keyboardheight];
         [UIView commitAnimations];
+    }
 }
 
 -(void)backTextViewTouchPoint:(UIGestureRecognizer *)ges
 {
+    NSLog(@"点击textView");
     CGPoint touchPoint = [ges locationInView:self.view];
     
     contentY = touchPoint.y;
@@ -386,10 +389,7 @@ NoteTextViewCellDelegate> {
 - (void)addKeyboardNotification
 {
     //键盘相关通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
-    
-    // 键盘高度变化通知，ios5.0新增的   主要用于中文输入的时候 覆盖的问题
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardDidShowNotification object:nil];
 }
 
 -(void)createToolBarForTextView{
@@ -763,7 +763,6 @@ NoteTextViewCellDelegate> {
                     attributedString = [self checkHasBeforePictureProcess:loc-1 InAttributeStr:attributedString];
                     if(bHasPic){
                         needInsertLoc ++;
-                        
                     } else{
                         loc ++;
                     }
@@ -780,14 +779,18 @@ NoteTextViewCellDelegate> {
             UIImage *img = nil;
             for (int i= 0; i< images.count; i++) {
                 img = images[i];
-                BOOL bHasPic = [self hasBeforePictureProcess:loc-1 InAttributeStr:attributedString];
-                attributedString = [self checkHasBeforePictureProcess:loc-1 InAttributeStr:attributedString];
                 NSUInteger needInsertLoc = loc;
-                if(bHasPic){
-                    needInsertLoc ++;
-                }else{
-                    loc ++;
+                
+                if(loc > 0){
+                    BOOL bHasPic = [self hasBeforePictureProcess:loc-1 InAttributeStr:attributedString];
+                    attributedString = [self checkHasBeforePictureProcess:loc-1 InAttributeStr:attributedString];
+                    if(bHasPic){
+                        needInsertLoc ++;
+                    }else{
+                        loc ++;
+                    }
                 }
+                
                 [attributedString insertAttributedString:[self createPictureAttributedStr:img] atIndex:needInsertLoc];
             }
         }

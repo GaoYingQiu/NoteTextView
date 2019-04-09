@@ -1,5 +1,6 @@
 platform :ios, "7.0"
 
+target ‘jojoIM’ do
 pod 'Masonry', '~> 0.6.4'
 #pod 'SVProgressHUD',:git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod 'SVProgressHUD', '~> 2.0.3'
@@ -9,6 +10,9 @@ pod 'AMapLocation','~> 2.1.1'
 pod 'AMap2DMap','~> 4.2.0'
 pod 'AMapSearch','~> 4.2.0'
 pod 'MJRefresh','~> 3.1.12'
+#pod 'IQKeyboardManager'
+
+end
 
 
 #加载更新命令

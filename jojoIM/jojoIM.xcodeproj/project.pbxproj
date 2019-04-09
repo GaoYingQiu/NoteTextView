@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46A4CE134F02ECDA89A02C9E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6537EEB446E8AD785EB28464 /* libPods.a */; };
+		11DEDB4BBEC63209AA0A5617 /* libPods-jojoIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7435A733D4065D5CBB3DF020 /* libPods-jojoIM.a */; };
 		EB15C3211DD0794A00550489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15C3201DD0794A00550489 /* main.m */; };
 		EB15C3241DD0794A00550489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15C3231DD0794A00550489 /* AppDelegate.m */; };
 		EB15C3271DD0794A00550489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15C3261DD0794A00550489 /* ViewController.m */; };
@@ -55,9 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		207603851AE818CE05F54BE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		6537EEB446E8AD785EB28464 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		79351086E8811A599EB21ABC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3D17169A24F9125915E40449 /* Pods-jojoIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jojoIM.release.xcconfig"; path = "Pods/Target Support Files/Pods-jojoIM/Pods-jojoIM.release.xcconfig"; sourceTree = "<group>"; };
+		7435A733D4065D5CBB3DF020 /* libPods-jojoIM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jojoIM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CADDB3E4A36F540ABA5CA2 /* Pods-jojoIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jojoIM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jojoIM/Pods-jojoIM.debug.xcconfig"; sourceTree = "<group>"; };
 		EB15C31C1DD0794A00550489 /* jojoIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jojoIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB15C3201DD0794A00550489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB15C3221DD0794A00550489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A4CE134F02ECDA89A02C9E /* libPods.a in Frameworks */,
+				11DEDB4BBEC63209AA0A5617 /* libPods-jojoIM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,13 +144,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00190EA666F0F76E777ACA19 /* Pods */ = {
+		088A0D4CBEBA81FCD445B6E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				207603851AE818CE05F54BE6 /* Pods.debug.xcconfig */,
-				79351086E8811A599EB21ABC /* Pods.release.xcconfig */,
+				E8CADDB3E4A36F540ABA5CA2 /* Pods-jojoIM.debug.xcconfig */,
+				3D17169A24F9125915E40449 /* Pods-jojoIM.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		38C8F704DCAFC8DDC3CB964D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7435A733D4065D5CBB3DF020 /* libPods-jojoIM.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EB15C3131DD0794A00550489 = {
@@ -160,8 +168,8 @@
 				EB15C3381DD0794B00550489 /* jojoIMTests */,
 				EB15C3431DD0794B00550489 /* jojoIMUITests */,
 				EB15C31D1DD0794A00550489 /* Products */,
-				00190EA666F0F76E777ACA19 /* Pods */,
-				F6FC95DB194621B27CD09110 /* Frameworks */,
+				088A0D4CBEBA81FCD445B6E9 /* Pods */,
+				38C8F704DCAFC8DDC3CB964D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,14 +307,6 @@
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
-		F6FC95DB194621B27CD09110 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6537EEB446E8AD785EB28464 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,12 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB15C3491DD0794B00550489 /* Build configuration list for PBXNativeTarget "jojoIM" */;
 			buildPhases = (
-				2B29B57AA58116401ACD1448 /* Check Pods Manifest.lock */,
+				ECA5F196F269541468D6A5E3 /* [CP] Check Pods Manifest.lock */,
 				EB15C3181DD0794A00550489 /* Sources */,
 				EB15C3191DD0794A00550489 /* Frameworks */,
 				EB15C31A1DD0794A00550489 /* Resources */,
-				8718EF96C6DEE249BE3F1F11 /* Embed Pods Frameworks */,
-				81AC832B838383DB8819D735 /* Copy Pods Resources */,
+				D5EBA0E794752772F421EA87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,7 +376,7 @@
 				TargetAttributes = {
 					EB15C31B1DD0794A00550489 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4457JG8BAD;
+						DevelopmentTeam = UYMT4K23Q8;
 						ProvisioningStyle = Automatic;
 					};
 					EB15C3341DD0794B00550489 = {
@@ -441,49 +440,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B29B57AA58116401ACD1448 /* Check Pods Manifest.lock */ = {
+		D5EBA0E794752772F421EA87 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-jojoIM/Pods-jojoIM-resources.sh",
+				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jojoIM/Pods-jojoIM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81AC832B838383DB8819D735 /* Copy Pods Resources */ = {
+		ECA5F196F269541468D6A5E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jojoIM-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8718EF96C6DEE249BE3F1F11 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -641,10 +635,10 @@
 		};
 		EB15C34A1DD0794B00550489 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 207603851AE818CE05F54BE6 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = E8CADDB3E4A36F540ABA5CA2 /* Pods-jojoIM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4457JG8BAD;
+				DEVELOPMENT_TEAM = UYMT4K23Q8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/jojoIM/jojoTextView.pch";
 				INFOPLIST_FILE = jojoIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -656,10 +650,10 @@
 		};
 		EB15C34B1DD0794B00550489 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79351086E8811A599EB21ABC /* Pods.release.xcconfig */;
+			baseConfigurationReference = 3D17169A24F9125915E40449 /* Pods-jojoIM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4457JG8BAD;
+				DEVELOPMENT_TEAM = UYMT4K23Q8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/jojoIM/jojoTextView.pch";
 				INFOPLIST_FILE = jojoIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

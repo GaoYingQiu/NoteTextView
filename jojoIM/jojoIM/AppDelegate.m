@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+//#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -38,7 +39,7 @@
     UINavigationController *rootNav = [[UINavigationController alloc]initWithRootViewController:rootVc];
     self.window.rootViewController = rootNav;
     [self.window makeKeyAndVisible];
-    
+//    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
     //configuration AMap AppKey
     [self configureAPIKey];
     
